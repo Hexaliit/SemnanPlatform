@@ -3,6 +3,10 @@ using SemnanCourse.Application.Extensions;
 using Serilog;
 using Microsoft.Identity.Client;
 using SemnanCourse.API.Middlewares;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Options;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +16,23 @@ builder.Host.UseSerilog((context, configuration) =>
     configuration.ReadFrom.Configuration(context.Configuration)
 );
 
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(option =>
+    {
+        option.SwaggerDoc("v1", new OpenApiInfo() { Title = "Semnan Platform API", Version = "v1" });
+        option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+        {
+            Name = "Authorization",
+            Description = "Please Enter Token:",
+            In = ParameterLocation.Header,
+            Type = SecuritySchemeType.ApiKey,
+            Scheme = JwtBearerDefaults.AuthenticationScheme
+        });
+
+        option.OperationFilter<SecurityRequirementsOperationFilter>();
+
+    }
+
+);
 
 builder.Services.AddScoped<ErrorHandling>();
 

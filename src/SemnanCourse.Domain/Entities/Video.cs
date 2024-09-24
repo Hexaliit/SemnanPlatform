@@ -14,6 +14,6 @@ namespace SemnanCourse.Domain.Entities
         public int CourseId { get; set; }
         public bool ShowOnDemo { get; set; } = false;
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-        public Course Course { get; set; } = new();
+        public Course? Course { get; set; } = new();
     }
 }

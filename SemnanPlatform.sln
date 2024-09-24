@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemnanCourse.Domain", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemnanCourse.Infrastructure", "src\SemnanCourse.Infrastructure\SemnanCourse.Infrastructure.csproj", "{01215C6C-5FE0-414E-B9A1-59CD09D85023}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemnanCourse.Application.Tests2", "src\SemnanCourse.Application.Tests2\SemnanCourse.Application.Tests2.csproj", "{B5289CC2-9798-4DCC-A4F7-E0E54C87ED15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{01215C6C-5FE0-414E-B9A1-59CD09D85023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01215C6C-5FE0-414E-B9A1-59CD09D85023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01215C6C-5FE0-414E-B9A1-59CD09D85023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5289CC2-9798-4DCC-A4F7-E0E54C87ED15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5289CC2-9798-4DCC-A4F7-E0E54C87ED15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5289CC2-9798-4DCC-A4F7-E0E54C87ED15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5289CC2-9798-4DCC-A4F7-E0E54C87ED15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

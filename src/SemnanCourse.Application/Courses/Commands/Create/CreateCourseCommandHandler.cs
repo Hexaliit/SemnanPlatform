@@ -45,19 +45,13 @@ namespace SemnanCourse.Application.Courses.Commands.Create
 
             var fileName = await imageRepository.CreateImage(request.Avatar);
 
-            var course = new Course()
-            {
-                Title = request.Title,
-                Description = request.Description,
-                Price = request.Price,
-                Avatar = fileName,
-                CategoryId = request.CategoryId,
-                UserId = Int32.Parse(userContext.GetCurrentUser()!.Id),
-                User = null,
-                Users = null,
-                Category = null,
-                Videos = null
-            };
+            var course = mapper.Map<Course>(request);
+            course.UserId = Int32.Parse(userContext.GetCurrentUser()!.Id);
+            course.Avatar = fileName;
+            course.Category = null;
+            course.User = null;
+            course.Users = null;
+            course.Videos = null;
 
             await courseRepository.CreateAsync(course);
  

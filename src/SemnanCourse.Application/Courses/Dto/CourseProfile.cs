@@ -19,6 +19,8 @@ namespace SemnanCourse.Application.Courses.Dto
             CreateMap<Course,CourseDto>();
 
             CreateMap<UpdateCourseCommand, Course>();
+
+            CreateMap<CreateCourseCommand, Course>();
         }
     }
 }
