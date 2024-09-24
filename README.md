@@ -1,4 +1,7 @@
+# Semnan University Platform API
 
+
+# Key Features
 
 
 # Used Technologies
@@ -15,8 +18,8 @@
 # Design Patterns
 - **RESTful Principles:** Adhering to RESTful design principles to ensure that APIs are designed for simplicity, scalability, and ease of use.
 - **Repository Pattern:** Implementing the repository pattern to abstract the data layer, enhancing application maintainability, testability, and cleanliness by decoupling data access logic from business logic.
-- **Dependency Injection:** 
-- **CQRS:**
+- **Dependency Injection:** is a programming technique that makes a class independent of its dependencies.
+- **CQRS:** separates read and update operations for a data store. Implementing CQRS  can maximize performance, scalability, and security.
 
 # Architecture
 - **Clean Architecture**
