@@ -1,8 +1,16 @@
 # Semnan University Platform API
-
+In this project Masters can upload a course.courses can be free and not free.every course has some vidoe and videos can be shon on demo or not.Admins can also upload courses and videos plus cayegories.Users can watch free course's videos or buy not free courses and watch videos.
 
 # Key Features
-
+- **Authentication**
+- **Buy Course**
+- **Watch Vidoes**
+## On Admin Side
+- **Charge Balance**
+- **Change Role**
+- **CRUD operation on Categories**
+- **CRUD operation on Courses**
+- **CRUD operation on Videos**
 
 # Used Technologies
 - Asp.Net Core Web Api
